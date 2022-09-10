@@ -35,7 +35,7 @@ body {
   height: 80px;
 }
 .urna {
-  background-color: var(--bg-color-urna);
+  background-color: var();
   padding: 30px;
   display: flex;
   align-items: center;
@@ -132,7 +132,15 @@ h1 {
 }
 
 .voto-right {
-  width: 90px;
+  width: 120px;
+  border: 1px solid #000;
+  background-color: #FFF;
+  text-align: center;
+  height: 130px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .header-voto, 
@@ -171,11 +179,17 @@ h1 {
   animation-iteration-count: infinite;
 }
 
-.image-cargo {
-  border: 1px solid #000;
-  background-color: #FFF;
+.voto-right img {
+  width: 100%;
+}
+
+.small {
+  margin-top: 10px;
+  width: 90%;
   text-align: center;
-  width: 90px;
+  font-size: 0.8rem;
+  background-color: #FFF;
+  border: 1px solid #000;
 }
 
 @keyframes pisca {
