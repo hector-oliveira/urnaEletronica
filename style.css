@@ -1,0 +1,192 @@
+/* 49:30*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color-urna: #DBD5c9;
+  --bg-color-tela: linear-gradient(to right, #E8E8E8, #C1C1C1);
+  --bg-color-teclado: #403A3A;
+  --bg-color-btn: #000000;
+  --bg-color-btn-branco: #FFF;
+  --bg-color-btn-corrigir: #F09046;
+  --bg-color-btn-confirmar: #48C079;
+
+  --color-btn: #FFFFFF;
+
+  --box-shadow-btn: 3px 3px 0 #555;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image {
+  width: 80px;
+  height: 80px;
+}
+.urna {
+  background-color: var(--bg-color-urna);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela {
+  width: 500px;
+  height: 410px;
+  background: var(--bg-color-tela);
+  border: 2px solid #555;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container-right {
+  margin-left: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.teclado {
+  background-color: var(--bg-color-teclado); 
+  margin-top: 20px;
+}
+
+.trio {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.botao {
+  width: 70px;
+  height: 40px;
+  background-color: var(--bg-color-btn);
+  color: var(--color-btn);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-btn);
+}
+
+.btn-branco {
+  background-color: var(--bg-color-btn-branco);
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.btn-corrigir {
+  background-color: var(--bg-color-btn-corrigir);
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.btn-confirmar {
+  background-color: var(--bg-color-btn-confirmar);
+  color: #000;
+  font-size: 0.9rem;
+  width: 90px;
+  height: 50px;
+}
+
+.voto {
+  flex: 1;
+  display: flex;
+}
+
+.info {
+  height: 90px;
+  display: flex;
+  font-size: 0.85rem;
+  border-top: 2px solid #000;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.voto-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.voto-right {
+  width: 90px;
+}
+
+.header-voto, 
+.cargo,
+.digite {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header-voto,
+.cargo,
+.digite,
+.info-geral {
+  padding-left: 20px;
+}
+
+.info-geral {
+  flex: 1;
+  line-height: 50px;
+}
+
+.quadrado {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.quadrado.pisca {
+  animation-name: pisca;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.image-cargo {
+  border: 1px solid #000;
+  background-color: #FFF;
+  text-align: center;
+  width: 90px;
+}
+
+
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
