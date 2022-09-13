@@ -1,10 +1,10 @@
-const candidatos = [
+const secoes = [
   {
     cargo: 'Vereador',
     quantidadeNumeros: 5,
     descricao: [
       {
-        numero: 00111,
+        numero: '00111',
         nome: 'Waluigi',
         partido: 'ABC',
         foto: [
@@ -13,7 +13,7 @@ const candidatos = [
 
       },
       {
-        numero: 11000,
+        numero: '11000',
         nome: 'Mile Tails',
         partido: 'DEF',
         foto: [
@@ -29,7 +29,7 @@ const candidatos = [
     quantidadeNumeros: 2,
     descricao: [
       {
-        numero: 01,
+        numero: '01',
         nome: 'Bumblebee',
         partido: 'GHI',
         vice: 'Optmus',
@@ -40,7 +40,7 @@ const candidatos = [
 
       },
       {
-        numero: 02,
+        numero: '02',
         nome: 'Optmus',
         partido: 'JKL',
         vice: 'Bumblebee',
