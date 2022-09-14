@@ -57,7 +57,7 @@ const secoes = [
       },
       {
         numero: '02',
-        nome: 'Optmus',
+        nome: 'Optimus Prime',
         partido: 'JKL',
         vice: 'Bumblebee',
         foto: [
