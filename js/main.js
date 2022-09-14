@@ -40,7 +40,23 @@ const atualizarInterface = () => {
       return false;
     }
   });
-  console.log("Candidato: ", candidato);
+  
+  if(candidato.length > 0) {
+    candidato = candidato[0];
+    spanHeader.style.display = 'block';
+    infoRodape.style.display = 'block';
+    info.innerHTML = `Nome: ${candidato.nome}<br/>Partido: ${candidato.partido}`;
+
+    let fotosHTML = '';
+    for(let i in candidato.foto) {
+      fotosHTML += `
+      <div class="content-img small">
+        <img class="image-cargo" src="./assets/images/${candidato.foto[i].url}" alt=""/>${candidato.foto[i].legenda}
+      </div>`
+    }
+
+    ladoDireito.innerHTML = fotosHTML;
+  }
 };
 
 const clicar = (n) => {
