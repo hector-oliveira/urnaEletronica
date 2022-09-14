@@ -46,7 +46,7 @@ const secoes = [
         vice: 'Bumblebee',
         foto: [
           { url: '01_1.jpg', legenda: 'Presidente' },
-          { url: '01.jpg', legenda: 'Vice-Presidente', small: true }
+          { url: '01.png', legenda: 'Vice-Presidente', small: true }
         ]
 
       }

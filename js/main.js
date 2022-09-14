@@ -87,14 +87,36 @@ const clicar = (n) => {
 
 const branco = () => {
   votoEmBranco = true;
-  if (numeroDigitando === '') {
-    spanHeader.style.display = 'block';
-    infoRodape.style.display = 'block';
-    info.innerHTML = `<h2>VOTO EM BRANCO</h2>`
-  }
+  numeroDigitando = '';
+  digitoHTML = '';
+  spanHeader.style.display = 'block';
+  infoRodape.style.display = 'block';
+  info.innerHTML = `<h2>VOTO EM BRANCO</h2>`
+  
 };
 const corrigir = () => exibirSecao();
-const confirmar = () => {};
+
+const confirmar = () => {
+  let secao = secoes[secaoAtual];
+
+  let votoConfirmado = false;
+  if(votoEmBranco) {
+    votoConfirmado = true;
+    console.log('voto branco');
+  } else if (numeroDigitando.length === secao.quantidadeNumeros) {
+    votoConfirmado = true;
+    console.log('você votou em: ' + numeroDigitando);
+  }
+
+  if (votoConfirmado) {
+    secaoAtual++;
+    if(secoes[secaoAtual] !== undefined) {
+      exibirSecao();
+    } else {
+      console.log('fim');
+    }
+  }
+};
 
 exibirSecao();
 
