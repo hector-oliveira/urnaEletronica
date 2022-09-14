@@ -4,23 +4,39 @@ const secoes = [
     quantidadeNumeros: 5,
     descricao: [
       {
-        numero: '00111',
-        nome: 'Waluigi',
-        partido: 'ABC',
+        numero: '13274',
+        nome: 'Miles Tails',
+        partido: 'Sega',
         foto: [
-          {url: '00111.jpg', legenda: 'Vereador'}
+          { url: '13274.jpg', legenda: 'Vereador'}
         ]
 
       },
       {
-        numero: '11000',
-        nome: 'Mile Tails',
-        partido: 'DEF',
+        numero: '21380',
+        nome: 'Knuckles',
+        partido: 'Equidna',
         foto: [
-          { url: '11000.jpg', legenda: 'Vereador' }
+          { url: '21380.jpg', legenda: 'Vereador' }
         ]
 
-      }
+      },
+      {
+        numero: '41273',
+        nome: 'Waluid',
+        partido: 'Nintendo',
+        foto: [
+          { url: '41273.jpg', legenda: 'Vereador' }
+        ]
+      },
+      {
+        numero: '52189',
+        nome: 'Yoshi',
+        partido: 'Dino Nintendo',
+        foto: [
+          { url: '52189.jpg', legenda: 'Vereador' }
+        ]
+      },
     ] 
   },
 
