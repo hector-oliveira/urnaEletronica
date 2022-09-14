@@ -1,5 +1,3 @@
-// 1:25:56
-
 const spanHeader = document.querySelector('.header-voto span');
 const cargo = document.querySelector('.cargo span');
 const info = document.querySelector('.info-geral');
