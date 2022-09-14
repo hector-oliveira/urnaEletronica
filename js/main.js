@@ -10,9 +10,13 @@ const botoes = document.querySelectorAll('.botao');
 let secaoAtual = 0;
 let numeroDigitando = '';
 
+let votoEmBranco = true;
+
 const exibirSecao = () => {
   let secao = secoes[secaoAtual];
   let digitoHTML = '';
+  numeroDigitando = '';
+  votoEmBranco = false;
 
   for(let i = 0; i < secao.quantidadeNumeros; i++)  {
     if(i === 0 ) {
@@ -56,6 +60,13 @@ const atualizarInterface = () => {
     }
 
     ladoDireito.innerHTML = fotosHTML;
+  } else {
+    spanHeader.style.display = 'block';
+    infoRodape.style.display = 'block';
+    info.innerHTML = `<h2>VOTO NULO</h2>`
+    ladoDireito.innerHTML = `<div class="content-img small">
+      <img class="image-cargo" src="./assets/images/desconhecido.png" alt="" /></div>`
+
   }
 };
 
@@ -74,6 +85,16 @@ const clicar = (n) => {
   }
 }
 
+const branco = () => {
+  votoEmBranco = true;
+  if (numeroDigitando === '') {
+    spanHeader.style.display = 'block';
+    infoRodape.style.display = 'block';
+    info.innerHTML = `<h2>VOTO EM BRANCO</h2>`
+  }
+};
+const corrigir = () => exibirSecao();
+const confirmar = () => {};
 
 exibirSecao();
 
