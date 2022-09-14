@@ -23,7 +23,7 @@ const secoes = [
       },
       {
         numero: '41273',
-        nome: 'Waluid',
+        nome: 'Waluigi',
         partido: 'Nintendo',
         foto: [
           { url: '41273.jpg', legenda: 'Vereador' }
