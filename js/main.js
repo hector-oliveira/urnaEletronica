@@ -98,6 +98,7 @@ const corrigir = () => exibirSecao();
 
 const confirmar = () => {
   let secao = secoes[secaoAtual];
+  const telaFim = document.querySelector('.tela');
 
   let votoConfirmado = false;
   if(votoEmBranco) {
@@ -113,7 +114,7 @@ const confirmar = () => {
     if(secoes[secaoAtual] !== undefined) {
       exibirSecao();
     } else {
-      console.log('fim');
+      telaFim.innerHTML = `<h1 class="fim">FIM</h1>`;
     }
   }
 };
